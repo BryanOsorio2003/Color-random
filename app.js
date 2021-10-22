@@ -1,5 +1,5 @@
 const button = document.getElementById('btnColor');
-    body = document.querySelector("body")
+    section = document.querySelector("section")
 
 button.addEventListener("click",colorRandom);
 
@@ -11,6 +11,6 @@ function colorRandom() {
     for(var i = 0; i < 6; i++){
 		color = color + simbolos[Math.floor(Math.random() * 16)];
 	}
-    body.style.background = color;
+    section.style.background = color;
 }
 
